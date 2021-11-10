@@ -1,0 +1,313 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+header {
+  padding: 30px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .image img {
+  width: 200px;
+}
+header .container button {
+  width: 130px;
+  height: 40px;
+  background-color: white;
+  border-radius: 30px;
+  border: solid hsl(321, 100%, 78%) 2px;
+}
+header button a {
+  text-decoration: none;
+  color: hsl(321, 100%, 78%);
+}
+.main-heading {
+  padding: 100px 0;
+}
+.main-heading .container {
+  text-align: center;
+}
+.main-heading h1 {
+  font: 700 45px "Poppins", sans-serif;
+  color: hsl(192, 100%, 9%);
+}
+.main-heading p {
+  line-height: 1.5;
+  color: hsl(192, 100%, 9%);
+  font-size: 19px;
+  width: 535px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-heading button {
+  margin-top: 40px;
+  width: 300px;
+  height: 60px;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 30px;
+  border: solid hsl(322, 100%, 66%) 2px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+  cursor: pointer;
+}
+.main-heading button a {
+  text-decoration: none;
+  color: white;
+}
+.main-heading button:hover {
+  opacity: 90%;
+}
+.main-img {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.main-img img {
+  width: 800px;
+  padding-bottom: 60px;
+  max-width: 100%;
+}
+.stauts .container {
+  display: flex;
+  justify-content: space-around;
+}
+.stauts .container .communities,
+.messages {
+  position: relative;
+  padding-bottom: 60px;
+}
+.communities,
+.messages span {
+  color: hsl(210, 5%, 64%);
+}
+.stauts .container .communities::before {
+  content: "1.4k+";
+  font-size: 60px;
+  position: absolute;
+  top: -70px;
+  color: hsl(192, 100%, 9%);
+  font-weight: 800;
+}
+.stauts .container .messages::before {
+  content: "2.7m+";
+  font-size: 60px;
+  position: absolute;
+  top: -70px;
+  left: -15px;
+  color: hsl(192, 100%, 9%);
+  font-weight: 800;
+}
+.stauts .container .communities img {
+  width: 30px;
+  position: absolute;
+  top: -100px;
+  left: 5px;
+}
+.stauts .container .messages img {
+  width: 30px;
+  position: absolute;
+  top: -100px;
+  left: -6px;
+}
+@media (max-width: 768px) {
+  header .container .image img {
+    width: 170px;
+  }
+  .main-heading h1 {
+    font: 700 33px/1.5 "Poppins", sans-serif;
+  }
+  .main-heading p {
+    font-size: 17px;
+    line-height: 1.7;
+    width: auto;
+  }
+  .stauts .container {
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+  }
+}
+.explan-section {
+  padding: 50px 0;
+  /* background-color: hsl(207, 100%, 98%); */
+}
+.explan-section .container .box {
+  display: flex;
+  align-items: center;
+  gap: 193px;
+  position: relative;
+  margin: 130px 0;
+}
+/* .explan-section .container .grow::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/bg-section-top-desktop-1.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  top: -150px;
+  left: 0;
+} */
+.explan-section .container .conversation {
+  flex-direction: row-reverse;
+  background-color: white;
+}
+.explan-section .container .box img {
+  width: 450px;
+  max-width: 100%;
+}
+.explan-section .container .box h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: hsl(192, 100%, 9%);
+}
+.explan-section .container .box p {
+  line-height: 1.5;
+  color: hsl(192, 100%, 9%);
+}
+@media (max-width: 768px) {
+  .explan-section .container .box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 130px 0;
+    flex-direction: column-reverse;
+    align-content: center;
+    text-align: center;
+  }
+  .explan-section .container .box h1 {
+    font-size: 35px;
+  }
+}
+.started-use-seation {
+  text-align: center;
+  padding: 50px 0 100px;
+}
+.started-use-seation h1 {
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+.started-use-seation button {
+  width: 250px;
+  height: 50px;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 30px;
+  border: solid hsl(322, 100%, 66%) 2px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+}
+.started-use-seation button a {
+  text-decoration: none;
+  color: white;
+}
+footer {
+  padding: 100px 0;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.background-footer img {
+  width: 100%;
+  position: relative;
+  bottom: -7px;
+}
+#logo-footer {
+  margin-left: -13px;
+}
+footer .info p {
+  width: 355px;
+  line-height: 1.5;
+  padding: 20px 0;
+}
+footer .info .phone-email section img {
+  margin: 0 15px 0 0;
+}
+footer .info .icon {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .info .icon i {
+  font-size: 20px;
+  color: hsl(192, 100%, 9%);
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+footer .info .icon i:nth-child(2) {
+  font-size: 40px;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  border-radius: 5px;
+}
+footer .sign p {
+  width: 355px;
+  line-height: 1.5;
+  padding: 20px 0;
+}
+footer .sign .inpout-secation button {
+  width: 120px;
+  height: 40px;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 6px;
+  border: solid hsl(322, 100%, 66%) 2px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+  margin-left: 10px;
+}
+footer .sign .inpout-secation button a {
+  text-decoration: none;
+  color: white;
+}
+footer .sign .inpout-secation input {
+  border-radius: 6px;
+  border: none;
+  padding: 10px 15px;
+}
+@media (max-width: 768px) {
+  footer .container {
+    text-align: center;
+  }
+  footer .icon {
+    justify-content: center;
+  }
+  footer .sign .inpout-secation button {
+    margin-top: 20px;
+  }
+}
